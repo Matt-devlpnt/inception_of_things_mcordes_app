@@ -3,8 +3,8 @@ kind: Endpoints
 metadata:
   name: dev-service
   namespace: dev
- subsets:
-   - addresses:
-       - ip: 10.42.0.20
-     ports:
-       - port: 8888
+subsets:
+  - addresses:
+      - ip: 10.42.0.20
+    ports:
+      - port: 8888
