@@ -3,8 +3,6 @@ kind: Deployment
 metadata:
   name: dev-app-deployment
   namespace: dev
-  labels:
-    app.kubernetes.io/name: proxy
 spec:
   replicas: 1
   selector:
@@ -20,4 +18,3 @@ spec:
         image: wil42/playground:v2
         ports:
         - containerPort: 8888
-          name: http-web-svc
