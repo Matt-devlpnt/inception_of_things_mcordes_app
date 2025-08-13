@@ -9,6 +9,6 @@ spec:
   ports:
     - protocol: TCP
       port: 8888
-      targetPort: http-web-svc
+      targetPort: 8888
       nodePort: 30010
   type: NodePort
